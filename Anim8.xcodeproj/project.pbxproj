@@ -19,6 +19,10 @@
 		353BEEA7193B964B00D94878 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353BEE8F193B964B00D94878 /* UIKit.framework */; };
 		353BEEAF193B964B00D94878 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 353BEEAD193B964B00D94878 /* InfoPlist.strings */; };
 		353BEEB1193B964B00D94878 /* Anim8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BEEB0193B964B00D94878 /* Anim8Tests.m */; };
+		353BEEBD193B966700D94878 /* FadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BEEBC193B966700D94878 /* FadeAnimation.m */; };
+		353BEEC0193B97B800D94878 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BEEBF193B97B800D94878 /* MainViewController.m */; };
+		353BEEC3193B993100D94878 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BEEC2193B993100D94878 /* ModalViewController.m */; };
+		353BEEC6193BB94B00D94878 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BEEC5193BB94B00D94878 /* Logger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		353BEEAC193B964B00D94878 /* Anim8Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anim8Tests-Info.plist"; sourceTree = "<group>"; };
 		353BEEAE193B964B00D94878 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		353BEEB0193B964B00D94878 /* Anim8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anim8Tests.m; sourceTree = "<group>"; };
+		353BEEBB193B966700D94878 /* FadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimation.h; sourceTree = "<group>"; };
+		353BEEBC193B966700D94878 /* FadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimation.m; sourceTree = "<group>"; };
+		353BEEBE193B97B800D94878 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		353BEEBF193B97B800D94878 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		353BEEC1193B993100D94878 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		353BEEC2193B993100D94878 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		353BEEC4193BB94B00D94878 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		353BEEC5193BB94B00D94878 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +119,17 @@
 		353BEE91193B964B00D94878 /* Anim8 */ = {
 			isa = PBXGroup;
 			children = (
+				353BEEBA193B965800D94878 /* Animations */,
 				353BEE9A193B964B00D94878 /* AppDelegate.h */,
 				353BEE9B193B964B00D94878 /* AppDelegate.m */,
 				353BEE9D193B964B00D94878 /* Images.xcassets */,
 				353BEE92193B964B00D94878 /* Supporting Files */,
+				353BEEBE193B97B800D94878 /* MainViewController.h */,
+				353BEEBF193B97B800D94878 /* MainViewController.m */,
+				353BEEC1193B993100D94878 /* ModalViewController.h */,
+				353BEEC2193B993100D94878 /* ModalViewController.m */,
+				353BEEC4193BB94B00D94878 /* Logger.h */,
+				353BEEC5193BB94B00D94878 /* Logger.m */,
 			);
 			path = Anim8;
 			sourceTree = "<group>";
@@ -142,6 +161,15 @@
 				353BEEAD193B964B00D94878 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		353BEEBA193B965800D94878 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				353BEEBB193B966700D94878 /* FadeAnimation.h */,
+				353BEEBC193B966700D94878 /* FadeAnimation.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353BEEBD193B966700D94878 /* FadeAnimation.m in Sources */,
+				353BEEC6193BB94B00D94878 /* Logger.m in Sources */,
 				353BEE9C193B964B00D94878 /* AppDelegate.m in Sources */,
+				353BEEC3193B993100D94878 /* ModalViewController.m in Sources */,
 				353BEE98193B964B00D94878 /* main.m in Sources */,
+				353BEEC0193B97B800D94878 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
